@@ -3,5 +3,17 @@
 # Simple note taking script
 # author: greg
 
-echo $(date): $* >> ~/bin/notes.txt
-echo Note saved: $*
+# get the date
+date=$(date)
+
+#get the topic
+topic="$1"
+
+#filename to write to
+filename="${HOME}/bin/${topic}notes.txt"
+
+# ask user for input
+read -p  "Make note: " note
+
+echo "$date: $note" >> "$filename"
+echo "Note '$note' save to $filename"
