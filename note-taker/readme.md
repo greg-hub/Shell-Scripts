@@ -1,9 +1,13 @@
-### Simple note taking script.
+# Note Script 
 
-### Type tn titleofnote
+## Take notes from anywhere in the terminal
 
-## make your note
++ Add __export PATH=$PATH:~/bin__ to your terminal .rc settings file
 
-### notes are saved in ~/bin/{Name of note}.txt
++ $ tn titleofnote 
 
-### make sure the path is set in rc file to export PATH=$PATH:~/bin to be able to take notes from any dir in the terminal.
++ $ make your note
+
++ Notes are saved in __~/bin/{Name of note}.txt__
+
+
